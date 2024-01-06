@@ -1,5 +1,6 @@
 
 <template>
+  <reactive />
   <RefYufa />
   <Person />
   <Setup_yufatang />
@@ -9,6 +10,7 @@
 import Person from './components/Person.vue'
 import Setup_yufatang from './components/Setup_yufatang.vue'
 import RefYufa from './components/RefYufa.vue'
+import reactive from './components/reactive.vue'
 </script>
 
 <style scoped>
