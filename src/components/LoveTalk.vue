@@ -2,7 +2,7 @@
     <div class="lovetalk">
         <h2>土味情话集锦</h2>
         <button>获取土味情话</button>
-        <ul v-for="item in talkList" :key="item.id">
+        <ul v-for="item in loveTalkStore.talkList" :key="item.id">
             <li>{{ item.title }}</li>
 
         </ul>
@@ -12,20 +12,10 @@
 <script lang='ts' setup name="LoveTalk">
 import { reactive } from 'vue'
 import { nanoid } from 'nanoid'
-let talkList = reactive([
-    {
-        id: nanoid(),
-        title: '草莓，蓝莓，半月梅，今天你想我了没？'
-    },
-    {
-        id: nanoid(),
-        title: '不要抱怨，抱我'
-    },
-    {
-        id: nanoid(),
-        title: '“我觉得你这个人不适合谈恋爱” “为什么?” “适合结婚。'
-    },
-])
+import { useLoveTalkStore } from '@/store/lovetalk';
+
+const loveTalkStore = useLoveTalkStore()
+
 </script>
 <style>
 .lovetalk {
