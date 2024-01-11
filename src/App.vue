@@ -1,5 +1,7 @@
 
 <template>
+  <LoveTalk />
+  <Count />
   <reactive />
   <RefYufa />
   <Person />
@@ -11,6 +13,8 @@ import Person from './components/Person.vue'
 import Setup_yufatang from './components/Setup_yufatang.vue'
 import RefYufa from './components/RefYufa.vue'
 import reactive from './components/reactive.vue'
+import Count from './components/Count.vue'
+import LoveTalk from './components/LoveTalk.vue'
 </script>
 
 <style scoped>
