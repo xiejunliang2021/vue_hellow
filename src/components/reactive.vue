@@ -1,6 +1,6 @@
 <template>
     <div class="car">
-        <h2>
+        <h2 >
             我有一台汽车，品牌是{{ car.name }},价格是{{ car.price }}
             <br>
             <button @click="changename">修改品牌</button>

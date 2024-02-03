@@ -1,9 +1,10 @@
 
 <template>
-  <reactive />
+  <Strap />
+  <!-- <reactive />
   <RefYufa />
   <Person />
-  <Setup_yufatang />
+  <Setup_yufatang /> -->
 </template>
 
 <script lang="ts" setup name="App">
@@ -11,6 +12,7 @@ import Person from './components/Person.vue'
 import Setup_yufatang from './components/Setup_yufatang.vue'
 import RefYufa from './components/RefYufa.vue'
 import reactive from './components/reactive.vue'
+import Strap from './components/Strap.vue'
 </script>
 
 <style scoped>
