@@ -33,7 +33,8 @@ const currentPage = ref(1)
 const pageSize = ref(10)
 
 // 获取数据
-axios.defaults.baseURL = import.meta.env.VITE_APP_API_BASEURL
+// axios.defaults.baseURL = import.meta.env.VITE_APP_API_BASEURL
+axios.defaults.baseURL ='http://207.211.157.169:8000'
 
 const fetchData = async ()=>{
     try{
