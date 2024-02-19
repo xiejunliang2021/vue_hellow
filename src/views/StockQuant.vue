@@ -37,7 +37,7 @@ axios.defaults.baseURL = import.meta.env.VITE_APP_API_BASEURL
 
 const fetchData = async ()=>{
   try{
-      const respone = await axios.get('/stock/list/');
+      const respone = await axios.get('stocks/');
       // 假设响应数据是一个数组
       data.value = respone.data;  
   }

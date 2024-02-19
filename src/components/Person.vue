@@ -34,11 +34,11 @@ const pageSize = ref(10)
 
 // 获取数据
 // axios.defaults.baseURL = import.meta.env.VITE_APP_API_BASEURL
-axios.defaults.baseURL ='http://207.211.157.169:8000'
+// axios.defaults.baseURL ='http://207.211.157.169:8000'
 
 const fetchData = async ()=>{
     try{
-        const respone = await axios.get('/stock/list/');
+        const respone = await axios.get('/api/stocks/');
         // 假设响应数据是一个数组
         data.value = respone.data;  
     }
