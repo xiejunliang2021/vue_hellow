@@ -33,11 +33,11 @@ const currentPage = ref(1)
 const pageSize = ref(10)
 
 // 获取数据
-axios.defaults.baseURL = import.meta.env.VITE_APP_API_BASEURL
+// axios.defaults.baseURL = import.meta.env.VITE_APP_API_BASEURL
 
 const fetchData = async ()=>{
   try{
-      const respone = await axios.get('stocks/');
+      const respone = await axios.get('http://168.138.11.4:8000/api/stocks/');
       // 假设响应数据是一个数组
       data.value = respone.data;  
   }
