@@ -1,7 +1,7 @@
 // 创建路由器并暴露出去
 
 // 第一步：引入createRouter
-import {createRouter, createWebHistory} from 'vue-router'
+import {createRouter,  createWebHashHistory} from 'vue-router'
 
 import Person from '@/components/Person.vue'
 import Stock from '@/views/Stock.vue'
@@ -10,7 +10,7 @@ import StockQuant from '@/views/StockQuant.vue'
 
 //第二部：创建路由
 const router = createRouter({
-    history:createWebHistory(), // 路由器的工作模式
+    history:createWebHashHistory(), // 路由器的工作模式
     routes:[
         {
             name:'home',
